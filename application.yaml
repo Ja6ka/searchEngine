@@ -1,0 +1,25 @@
+# example values
+
+indexing-settings:
+  sites:
+    - url: http://www.playback.ru
+      name: PlayBack
+    - url: https://et-cetera.ru/mobile
+      name: EtCetera
+
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: root
+    password: Nifedowplay322
+    url: jdbc:mysql://localhost:3306/search_engine?useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
+  jpa:
+    hibernate:
+      transaction:
+        jta:
+          platform:
+      ddl-auto: update
+    show-sql: true
